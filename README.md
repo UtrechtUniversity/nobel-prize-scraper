@@ -32,13 +32,13 @@ For example, to scrape data for the period 1960-1970, using a persistent databas
 python main.py \
     --min-year 1960 \
     --max-year 1970 \
-    --output-file ./novel_sixties.csv \
+    --output-file ./nobel_sixties.csv \
     --database-file ./nobel.db3
 ```
 
 ## Database
 
-By default, the script uses an in-memory database to save the scraped data, which is automatically destroyed after the script finishes. This means that if you re-run the script, the scraping process starts again from scratch. To avoid, run the script with a named database file, so that the database is created and saved to disk. When re-running the script, specify the same database file, so that entries that were scraped before are not scraped again.
+By default, the script uses an in-memory database to save the scraped data, which is automatically destroyed after the script finishes. This means that if you re-run the script, the scraping process starts again from scratch. To avoid, run the script with a named database file, so that the database is saved to disk. When re-running the script, specify the same database file, so that entries that were scraped before are not scraped again.
 
 
 ## Output
