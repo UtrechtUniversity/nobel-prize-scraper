@@ -12,7 +12,7 @@ class NobelScraper:
     nomination_url='https://www.nobelprize.org/nomination/archive/show.php?id={id}'
 
     min_year=1901
-    max_year=2023
+    max_year=1971
     prizes={
         1: 'Nobel Price in Physics',
         2: 'Nobel Price in Chemistry',
